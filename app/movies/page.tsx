@@ -10,7 +10,7 @@ const Movies = async () => {
     const moviesData = await res.json()
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-3  mt-10 mx-14">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-3  mt-10 mx-14 justify-items-center place-items-center">
       {moviesData.results?.map((movie : Movie) => (
         <MoviesCard key={movie.id} movie={movie} />
       ))}
