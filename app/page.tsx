@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import UserPage from "./users/page";
 
 // creating the interface for code auto complete
 
@@ -8,9 +9,9 @@ const page = async () => {
 
   return (
     <div>
-      All User
-      <br />
-      <Link href={'/users'}>User</Link>
+    
+      <Link href={'/movies'} className="btn btn-outline">Show Movies</Link>
+      
     </div>
   );
 };
