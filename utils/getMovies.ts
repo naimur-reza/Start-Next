@@ -9,7 +9,7 @@ export default async function getMovies(
 ) {
   await delay(time)
   const res = await fetch(
-    `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.MOVIE_API}&language=en-US&page=1`
+    `https://api.themoviedb.org/3/movie/popular?api_key=${process.env.MOVIE_API}&language=en-US&page=2`
   )
   if (!res.ok || shouldError) {
     throw new Error(`An error has occurred: ${res.status}`)

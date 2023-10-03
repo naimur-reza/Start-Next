@@ -2,7 +2,7 @@ export default function Loading() {
   return (
     <div className=" text-center">
       <div className="grid  grid-cols-1 lg:grid-cols-3 animate-pulse mx-14">
-        {Array.from({ length: 12 }, (movie, i) => (
+        {Array.from({ length: 20 }, (movie, i) => (
           <div
             className="text-white flex flex-col justify-center items-center "
             key={i}
