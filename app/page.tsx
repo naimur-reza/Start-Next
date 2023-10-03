@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import UserPage from "./users/page";
 
 // creating the interface for code auto complete
 
