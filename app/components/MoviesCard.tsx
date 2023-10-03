@@ -24,7 +24,7 @@ const MoviesCard: React.FC<MoviesCardProps> = ({ movie }) => {
           {movie.title}
           <div className="badge badge-secondary">{movie.release_date}</div>
         </h2>
-        <p>{movie.overview}</p>
+        <p>{movie.overview.slice(0,100)}...</p>
         <div className="card-actions justify-end">
           {/* <div className="badge badge-outline">{ movei}</div>  */}
         </div>

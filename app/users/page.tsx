@@ -10,16 +10,16 @@ interface Movie {
 }
 
 const MovieList = async () => {
-  const moviesData = await getMovies();
-  console.log(moviesData);
-  return (
-    <div>
-      {moviesData.results.map((movie: Movie) => (
-        <MoviesCard movie={movie} />
-      ))}
-      s
-    </div>
-  );
+//   const moviesData = await getMovies();
+//   console.log(moviesData);
+//   return (
+//     <div>
+//       {moviesData.results.map((movie: Movie) => (
+//         <MoviesCard movie={movie} />
+//       ))}
+//       s
+//     </div>
+//   );
 };
 
 export default MovieList;

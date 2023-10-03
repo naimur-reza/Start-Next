@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={roboto.className}>
-      <body className="mx-12 lg:mx-24">{children}</body>
+      <body className="">{children}</body>
     </html>
   )
 }
