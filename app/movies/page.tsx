@@ -6,7 +6,11 @@ import { Movie } from "@/utils/MovieType";
  
 
 const Movies = async () => {
-    const res = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.MOVIE_API}&language=en-US&page=1`)
+  const delay = (ms: number) => {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
+  const res = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.MOVIE_API}&language=en-US&page=1`)
+  await delay(4000)
     const moviesData = await res.json()
 
   return (
