@@ -8,8 +8,8 @@ const page = async () => {
 
   return (
     <div>
-    
-      <Link href={'/movies'} className="btn btn-outline">Show Movies</Link>
+ 
+      <Link href={'/movies'} className="text-white border-2 p-2 border-white">Show Movies</Link>
       
     </div>
   );
