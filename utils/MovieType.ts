@@ -5,3 +5,8 @@ export interface Movie {
   overview: string;
   backdrop_path: string;
 }
+
+export interface MoviesType  {
+  page: number
+  results: Movie[]
+}
