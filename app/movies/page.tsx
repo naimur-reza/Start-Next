@@ -10,7 +10,7 @@ interface Movie {
   backdrop_path: string;
 }
 
-const Movie = async () => {
+const Movies = async () => {
   const moviesData = await getMovies();
   console.log(moviesData);
   return (
@@ -22,4 +22,4 @@ const Movie = async () => {
   );
 };
 
-export default Movie;
+export default Movies;
