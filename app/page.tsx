@@ -7,7 +7,7 @@ import React from "react";
 const page = async () => {
 
   return (
-    <div>
+    <div className="flex items-center justify-center">
  
       <Link href={'/movies'} className="text-white border-2 p-2 border-white">Show Movies</Link>
       
