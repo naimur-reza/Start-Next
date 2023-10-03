@@ -10,7 +10,7 @@ const Movies = async () => {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-3  mt-10 mx-14">
-      {moviesData.results.map((movie : Movie) => (
+      {moviesData.results?.map((movie : Movie) => (
         <MoviesCard key={movie.id} movie={movie} />
       ))}
     </div>
