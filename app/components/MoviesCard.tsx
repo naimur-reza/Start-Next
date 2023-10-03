@@ -1,7 +1,7 @@
-"use client";
 import React from "react";
-import Movie from "../movies/page";
+ 
 import Image from "next/image";
+import { Movie } from "@/utils/MovieType";
 
 interface MoviesCardProps {
   movie: Movie;
