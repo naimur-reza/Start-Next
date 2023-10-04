@@ -7,7 +7,7 @@ export default function Loading() {
             className="text-white flex flex-col justify-center items-center "
             key={i}
           >
-            <div className="bg-gray-700/50 my-6 px-6 rounded-lg w-[380px] h-[216px]">
+            <div className="bg-gray-700/50 my-6 px-6 rounded-lg lg:w-[380px] h-[216px]">
               <div   className="invisible" />
             </div>
             <div  className="w-[350px] mb-2 h-2 bg-gray-700/50  rounded-2xl ">
