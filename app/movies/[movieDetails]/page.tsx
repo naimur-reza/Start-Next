@@ -1,6 +1,5 @@
-import getDetails from '@/utils/getMovieDetails';
-import Image from 'next/image';
-import React from 'react'
+import getDetails from "@/utils/getMovieDetails";
+import Image from "next/image";
 
 interface ParamsType {
   params: {
@@ -8,29 +7,45 @@ interface ParamsType {
   };
 }
 
+interface Genre {
+  id: number;
+  name: string;
+}
 interface DetailsType {
-  backdrop_path: string,
-  poster_path: string,
-  vote_count: number
+  original_title: string;
+  backdrop_path: string;
+  poster_path: string;
+  vote_count: number;
+  overview: string;
+  revenue: number;
+  genres: Genre[];
 }
 
-const Details:React.FC<ParamsType> = async({ params }) => {
-const id  = params.movieDetails
-    const details: DetailsType = await getDetails(id)
-    console.log(details)
+const Details: React.FC<ParamsType> = async ({ params }) => {
+  const id = params?.movieDetails;
+  const details: DetailsType = await getDetails(id, );
+  console.log(details);
   return (
-    <div>
-             <Image
-          className="rounded-lg"
-          width={400}
-          height={400}
-          alt="movie_image"
-          loading="lazy"
-          src={`https://image.tmdb.org/t/p/original${details.backdrop_path}`}
-        />
-      <h1 className='text-white'>Total Vote: { details.vote_count}</h1>
+    <div className="max-w-lg mx-auto space-y-2">
+      <Image
+        className="rounded-lg  "
+        width={500}
+        height={400}
+        alt="movie_image"
+        loading="lazy"
+        src={`https://image.tmdb.org/t/p/original${details.backdrop_path}`}
+      />
+      <h1 className="text-white text-lg mt-3">{details.original_title}</h1>
+      <h1 className="text-white">Liked: {details.vote_count}</h1>
+      <p className="text-zinc-500">Overview: {details.overview}</p>
+      <span className="text-yellow-500">Revenue: ${details.revenue}</span>
+      <ul className="text-pink-500/60 font-medium">
+        {details.genres.map((genre, i) => (
+          <li key={i}>{genre.name}</li>
+        ))}
+      </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Details
+export default Details;

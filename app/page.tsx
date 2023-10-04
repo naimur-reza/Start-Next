@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+
 
 // creating the interface for code auto complete
 

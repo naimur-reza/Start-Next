@@ -1,4 +1,4 @@
-import React from "react";
+
 import MoviesCard from "../components/MoviesCard";
 import { Movie, MoviesType } from "@/utils/MovieType";
 import getMovies from "@/utils/getMovies";
