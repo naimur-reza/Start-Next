@@ -2,6 +2,7 @@ import React from "react";
  
 import Image from "next/image";
 import { Movie } from "@/utils/MovieType";
+import Link from "next/link";
 
 interface MoviesCardProps {
   movie: Movie;
@@ -9,7 +10,8 @@ interface MoviesCardProps {
 
 const MoviesCard: React.FC<MoviesCardProps> = ({ movie }) => {
   return (
-    <div className="card w-96 bg-base-100 shadow-xl  cursor-not-allowed">
+    <Link href={`movies/${movie.id}`}>
+        <div className="card w-96 bg-base-100 shadow-xl  cursor-pointer">
       <figure>
         <Image
           className="rounded-lg"
@@ -31,6 +33,7 @@ const MoviesCard: React.FC<MoviesCardProps> = ({ movie }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 
