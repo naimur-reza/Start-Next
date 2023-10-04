@@ -23,7 +23,7 @@ interface DetailsType {
 
 const Details: React.FC<ParamsType> = async ({ params }) => {
   const id = params?.movieDetails;
-  const details: DetailsType = await getDetails(id, );
+  const details: DetailsType = await getDetails(id, 3000);
   console.log(details);
   return (
     <div className="max-w-lg mx-auto space-y-2">
