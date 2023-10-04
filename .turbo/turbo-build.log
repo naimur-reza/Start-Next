@@ -1,0 +1,31 @@
+
+> my-app@0.1.0 build
+> next build
+
+   Creating an optimized production build ...
+ ⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\C:\Users\Naimur Reza\Desktop\start-next\my-app\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\C:\Users\Naimur Reza\Desktop\start-next\my-app\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/6) ...
+   Generating static pages (1/6) 
+   Generating static pages (2/6) 
+   Generating static pages (4/6) 
+ ✓ Generating static pages (6/6) 
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    7.14 kB        87.6 kB
+├ ○ /_not-found                          883 B          81.3 kB
+└ ○ /movies                              5.25 kB        85.7 kB
++ First Load JS shared by all            80.4 kB
+  ├ chunks/864-78f117f2de1fd16d.js       27.5 kB
+  ├ chunks/fd9d1056-bdbc21787612b876.js  51 kB
+  ├ chunks/main-app-58546848f54221c9.js  234 B
+  └ chunks/webpack-55d6b005c42befe7.js   1.73 kB
+
+
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
